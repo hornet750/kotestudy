@@ -39,7 +39,7 @@
 # - C는 왼쪽과 오른쪽 컵 교환
 #
 # swaps 컵을 옮기는 동작, swap_type 컵옮기는 타입(ABC), ball_location 공이 있는 위치
-def chech_chr_input(swaps):
+def check_chr_input(swaps):
     allowed_chars = {'A', 'B', 'C'}
     for char in swaps:
         if char not in allowed_chars:
@@ -64,7 +64,7 @@ if swaps.count(' '):
 #if not ('A' in swaps or 'B' in swaps or 'C' in swaps):
 #    exit("컵 옮기는 동작 ABC 이외의 문자가 입력되었습니다.")
 
-if not chech_chr_input(swaps):
+if not check_chr_input(swaps):
     exit("입력한 문자열에 허용되지 않는 문자가 포함되어 있습니다.")
 
 #최초에 공이 왼쪽에 있다고 정의함
